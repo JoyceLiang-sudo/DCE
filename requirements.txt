@@ -1,0 +1,9 @@
+torch
+accelerate
+monai
+timm
+easydict
+tqdm
+torchvision
+pycocotools
+pillow

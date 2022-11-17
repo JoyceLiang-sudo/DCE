@@ -1,0 +1,20 @@
+trainer:
+  checkpoint: model
+  num_epochs: 200
+  warmup: 10
+  batch_size: 2
+  lr: 0.001
+  min_lr: 1e-6
+  optimizer: adamw
+  weight_decay: 0.05
+  weight_decay_end: 0.04
+  momentum_teacher: 0.996
+  num_workers: 0
+  train_ratio: 0.8
+  annotations: ./Annotations/coco_info.json
+  images: ./images
+  resume: True
+model:
+  image_size: 128
+  in_channels: 1 # 因为是灰度图，所以图片只有一个通道
+  out_channels: 6  # 因为有6个类别
